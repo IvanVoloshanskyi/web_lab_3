@@ -1,0 +1,27 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+
+}
+li {
+    list-style: none;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    background: #0874dc;
+    border-radius: 8px;
+    border-style: none;
+    color: #fff;
+    height: 42px;
+    width: 120px;
+    font-size: 18px;
+    cursor: pointer;
+}

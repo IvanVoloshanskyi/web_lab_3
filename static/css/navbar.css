@@ -1,0 +1,87 @@
+.hidden{
+    display: none;
+}
+button#addship{
+    background-color:inherit;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+button#myship{
+    background-color:inherit;
+    color: black;
+
+    padding-bottom: 20px;
+}
+.navbar {
+    height: 67px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    border: 1px solid #cacaca;
+    border-radius: 10px;
+
+}
+
+ul.nav-items {
+    margin: 0 0 0 0;
+
+
+}
+
+li.nav-item.active {
+    padding-top: 7%;
+    background-color: gray;
+    border-radius: 4px;
+    border:1px solid;
+}
+
+li.nav-item{
+    padding-top: 7%;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.nav-item {
+    margin-right: 20px;
+
+}
+
+.nav-form {
+    display: flex;
+    align-items: center;
+}
+
+.nav-form button {
+    margin-right: 20px;
+}
+
+.nav-form input {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 200px;
+    height: 20px;
+}
+
+button.nav-search {
+    background: initial;
+    color: #0874dc;
+    border: 1px solid #0874dc;
+    border-radius: 8px;
+
+}
+
+.nav-form button.clear {
+    background: initial;
+    color: #d9534f;
+    border: 1px solid #d9534f;
+    border-radius: 8px;
+
+}
