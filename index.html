@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/css/static.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="homepage" id="homepage">
+        <div class="navbar">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="index.html">My Hangar</a></li>
+                <li class="nav-item active"><button id="myship"> My Ship </button></li>
+                <li class="nav-item"><button id="addship"> Add Ship </button></li>
+            </ul>
+
+            <div class="nav-form">
+                <input type="text" placeholder="Type something..." class="nav-input" id="find_input">
+                <div class="nav-buttons">
+                    <button class="nav-search " id="search_button">Search</button>
+                    <button class="clear" id="clear_button">Clear</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="content">
+            <section class="left-side-settings">
+                <div class="first-half">
+                    <p>Manage ships</p>
+                    <div class="form-sort-by-price">
+                        <label class="sorting-text" for="sorting">
+                            Sort by the most expensive ships
+                        </label>
+                        <input id="sorting" type="checkbox">
+                    </div>
+                </div>
+                <hr>
+                <div class="second-half">
+                    <p class="count-text">Count total daily expenses:</p>
+                    <button id="count-button">Count</button>
+                    <div class="total-amount">
+                        <p class="total">Total express</p>
+                        <p class="total-amount price" id="total-result">0 ships</p>
+                    </div>
+                </div>
+            </section>
+            <main class="cards-class" id="cards">
+            <!-- CARDS -->
+            </main>
+        </div>
+    </div>
+    <div class="createpage hidden" id="createpage">
+        <div class="content_create-page">
+            <nav class="navbar">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="index.html">My Hangar</a></li>
+                    <li class="nav-item "><button id="myship"> My Ship </button></li>
+                    <li class="nav-item active"><button id="addship"> Add Ship </button></li>
+                </ul>
+            </nav>
+
+            <form class="create_ship">
+                <h1>Add Ship</h1>
+                Name
+                <input type="text" id="name-input">
+                Tonnage
+                <input type="text" id="tonnage-input">
+                Amount of passangers
+                <input type="text" id="amount-input">
+
+                <button id="submit-button">Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="static/js/main.js"></script>
+    <script type="module" src="static/js/item.js"></script>
+</body>
+
+</html>
