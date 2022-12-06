@@ -1,0 +1,26 @@
+    <div class="navbar">
+        <ul class="nav-items">
+            <li class="nav-item">
+                <a href="index.html">My Hangar</a>
+            </li>
+            <li class="nav-item active">
+                <button class="nav-item my__ship">
+                    <a href="{% url 'homepage' %}">My Ship</a>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-item add__ship">
+                    <a href="{% url 'add-goods' %}">Add Ship </a>
+                </button>
+            </li>
+        </ul>
+
+        <div class="nav-form">
+            <input type="text" placeholder="Type something..." class="nav-input" id="find_input">
+            <div class="nav-buttons">
+                <button class="nav-search " id="search_button">Search</button>
+                <button class="clear" id="clear_button">Clear</button>
+            </div>
+
+        </div>
+    </div>

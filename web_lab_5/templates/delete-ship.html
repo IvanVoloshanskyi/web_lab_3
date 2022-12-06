@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <h1>Are u sure you want to delete {{ name }} ? </h1>
+    <form method="POST" action="{% url "delete-ship" name.id %}">
+        {% csrf_token %}
+        <div class="buttons-delete">
+            <button type="button" class="cancel-button"><a href="{% url 'homepage' %}"> NO</a></button>
+            <button type="submit" class="confirm-button"> YES</button>
+        </div>
+    </form>
+
+{% endblock %}

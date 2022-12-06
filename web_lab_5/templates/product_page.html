@@ -1,0 +1,17 @@
+{#{% extends  'index.html' %}#}
+{% block title %}{{ object.title }}{% endblock %}
+{% block other-item %}
+
+        <div class="card">
+            <div class="card-header bg-secondary">
+                <p class="card-title">{{ object.name }} Name</p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{ object.tonange }} Tonnage</p>
+                <h5>
+                    <pre>Price: {{ object.am_of_passengers }} $</pre>
+                </h5>
+
+            </div>
+        </div>
+{% endblock %}

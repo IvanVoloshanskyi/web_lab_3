@@ -1,0 +1,42 @@
+<div class="content">
+    <section class="left-side-settings">
+        <div class="first-half">
+            <p>Manage ships</p>
+            <div class="form-sort-by-price">
+                <label class="sorting-text" for="sorting">
+                    Sort by the most expensive ships
+                </label>
+                <input id="sorting" type="checkbox">
+            </div>
+        </div>
+        <hr>
+        <div class="second-half">
+            <p class="count-text">Count total daily expenses:</p>
+            <button id="count-button">Count</button>
+            <div class="total-amount">
+                <p class="total">Total express</p>
+                <p class="total-amount price" id="total-result">0 ships</p>
+            </div>
+        </div>
+    </section>
+    <main class="cards-class" id="cards">
+        {% for object in object_list %}
+            <div class="card">
+                <div class="card-img">
+                    <img src="#" alt="250 X 70">
+                </div>
+                <div class="card-text">
+                    <div class="card-main-text"><p>{{ object.name }}</p></div>
+                    <div class="card-secondary-text"><p>{{ object.tonnage }} tonnage</p></div>
+                    <div class="card-secondary-text"><p>{{ object.am_of_passengers }} amount</p></div>
+                    <div class="card-buttons">
+                        <button class="button__edit"><a href="{{ object.get_absolute_url }}">Edit</a></button>
+                        <button class="button__remove"><a href="{% url 'delete-ship' object.id %}"> Remove</a></button>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </main>
+
+
+</div>

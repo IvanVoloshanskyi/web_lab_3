@@ -1,0 +1,90 @@
+.form-name{
+
+
+}
+.buttons-delete{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+.confirm-button{
+    background-color: #be1f1f;
+    color: white;
+    margin-bottom: 10px;
+}
+.cancel-button a{
+    color: white;
+}
+.cards-class{
+    margin: 2% 0 0 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    border: 1px solid #cacaca;
+    margin-right: 2%;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card-img {
+    height: 100px;
+    background-color: grey;
+}
+
+.card-text {
+    margin: auto;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.card-main-text {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.card-secondary-text {
+    margin-top: 13px;
+    color: #7D7987;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+.button__edit{
+    width: 70px;
+}
+.button__edit a{
+    color: white;
+}
+.button__remove a{
+    color: white;
+}
+.card-buttons{
+    margin-top: 10%;
+}
+
+.button__edit{
+    background-color: #5cc4dc;
+    height: 40px;
+    width: 100px;
+}
+.button__remove{
+    background-color: #d9534f;
+    width: 100px;
+    font-size: 15px;
+}

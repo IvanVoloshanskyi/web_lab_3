@@ -1,0 +1,67 @@
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.left-side-settings {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    height: 570px;
+    border: 2px #cacaca;
+    border-style: none solid none none;
+
+
+}
+
+.first-half {
+    border: 1px  #cacaca;
+    border-style: none none solid none;
+
+}
+
+
+.first-half p {
+    margin-bottom: 20%;
+    font-size: 22px;
+
+}
+
+.form-sort-by-price {
+    justify-content: space-between;
+    display: flex;
+}
+
+label.sorting-text {
+    width: 58%;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.second-half {
+
+}
+
+.second-half p.count-text {
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.total-amount {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-amount.price {
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.button__count {
+    color: #fff;
+}
